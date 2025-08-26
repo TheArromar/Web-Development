@@ -1,3 +1,6 @@
-echo ".vs/" >> .gitignore
-echo "bin/" >> .gitignore
-echo "obj/" >> .gitignore
+# Visual Studio cache
+.vs/
+
+# Build output
+bin/
+obj/
