@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="WAPP082025.Lab_5.WebForm2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="compareValidator.aspx.cs" Inherits="WAPP082025.Lab_5.WebForm2" %>
 
 <!DOCTYPE html>
 
