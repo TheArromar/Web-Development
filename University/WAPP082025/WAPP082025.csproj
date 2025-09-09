@@ -100,6 +100,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="App_Data\dbtest.mdf" />
+    <Content Include="App_Data\dbtest_log.ldf">
+      <DependentUpon>dbtest.mdf</DependentUpon>
+    </Content>
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -126,6 +130,7 @@
     <Content Include="Lab-5\rangeValidator.aspx" />
     <Content Include="Lab-5\testValidator.aspx" />
     <Content Include="Lab-5\compareValidator.aspx" />
+    <Content Include="Lab-6\Lab-6-1.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -154,6 +159,7 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="dbconnection.aspx" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -249,6 +255,13 @@
     <Compile Include="Lab-5\compareValidator.aspx.designer.cs">
       <DependentUpon>compareValidator.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Lab-6\Lab-6-1.aspx.cs">
+      <DependentUpon>Lab-6-1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lab-6\Lab-6-1.aspx.designer.cs">
+      <DependentUpon>Lab-6-1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -271,10 +284,15 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="dbconnection.aspx.cs">
+      <DependentUpon>dbconnection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dbconnection.aspx.designer.cs">
+      <DependentUpon>dbconnection.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.7.0.slim.min.map" />
